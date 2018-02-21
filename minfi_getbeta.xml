@@ -1,0 +1,27 @@
+<tool id="minfi_getbeta" name="minfi_getbeta" version="0.1.0">
+    <description>obtain Beta value matrix</description>
+    <requirements>
+        <requirement type="package" version="1.24.0">bioconductor-minfi</requirement>
+    </requirements>
+    <command detect_errors="exit_code"><![CDATA[
+        Rscript  ${__tool_directory__}/minfi_getbeta.R  "$input1" "$output1"
+    ]]></command>
+    <inputs>
+        <param type="data" name="input1" format="rdata" />
+    </inputs>
+    <outputs>
+        <data name="output1" format="txt" />
+    </outputs>
+    <tests>
+        <test>
+            <param name="input1" value="RSet.rdata"/>
+            <output name="output1" file="getbeta.txt"/>
+        </test>
+    </tests>
+    <help><![CDATA[
+        Tool return Beta value matrix in txt format
+    ]]></help>
+    <citations>
+        <citation type="doi">10.1093/bioinformatics/btu049</citation>
+    </citations>
+</tool>
