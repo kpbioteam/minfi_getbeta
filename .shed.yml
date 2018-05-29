@@ -1,0 +1,4 @@
+categories: [Epigenetics]
+description: Tool return Beta value matrix in txt format
+name: minfi_getbeta
+owner: kpbioteam

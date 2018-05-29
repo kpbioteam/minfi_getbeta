@@ -10,7 +10,7 @@
         <param type="data" name="input1" format="rdata" label="MethylSet"/>
     </inputs>
     <outputs>
-        <data name="output1" format="txt" label="Beta Value Matrix"/>
+        <data name="output1" format="tabular" label="Beta Value Matrix"/>
     </outputs>
     <tests>
         <test>
