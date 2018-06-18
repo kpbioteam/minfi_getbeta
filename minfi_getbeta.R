@@ -9,4 +9,6 @@ RSet <- get(load(input))
 
 beta <- getBeta(RSet)
 
-write.table(beta, output)
+write.table(beta, file = output, quote = FALSE, sep = "\t")
+
+

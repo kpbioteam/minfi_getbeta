@@ -10,16 +10,16 @@
         <param type="data" name="input1" format="rdata" label="MethylSet"/>
     </inputs>
     <outputs>
-        <data name="output1" format="tabular" label="Beta Value Matrix"/>
+        <data name="output1" format="bedgraph" label="Beta Value"/>
     </outputs>
     <tests>
         <test>
             <param name="input1" value="RSet.rdata"/>
-            <output name="output1" file="getbeta.txt"/>
+            <output name="output1" file="getbeta.bedgraph"/>
         </test>
     </tests>
     <help><![CDATA[
-        Tool return Beta value matrix in txt format
+        Tool return Beta value report the methylation levels
     ]]></help>
     <citations>
         <citation type="doi">10.1093/bioinformatics/btu049</citation>
